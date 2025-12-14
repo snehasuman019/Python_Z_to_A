@@ -16,3 +16,9 @@ print(name)
 # Boolean
 is_student = True
 print(is_student)
+
+# Checking data types
+print(type(age))
+print(type(height))
+print(type(name))
+print(type(is_student))
