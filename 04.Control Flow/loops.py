@@ -11,6 +11,21 @@ print("Done with while loop")
 
 #for loop
 #Iterates over a sequence (list, string, range, etc.).
+friends = ["Sam", "Joe", "Ria", "Tia"]
+len(friends)  #gives length of list
+print(len(friends))
+
+for friend in friends:
+    print(friend)
+
+for index in range(5):  #range(n) gives numbers from 0 to n-1
+    print(index)
+    if index == 0:
+        print("First iteration")
+    else:
+        print("Not first")
+
+
 for letter in "Sneha":
     print(letter)
 
