@@ -4,4 +4,4 @@ print(a)
 print(a.lower())
 print(a[0])
 print(a.index("t"))
-print
+print(a.replace("Python", "Java"))
