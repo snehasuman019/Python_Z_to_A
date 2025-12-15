@@ -1,13 +1,3 @@
-print("Hello everybody! \nHow are you all.")
-a = "So i thought of learning Python."
-print(a)
-print(a.lower())
-print(a[0])
-print(a.index("t"))
-print(a.replace("Python", "Java"))
-
-
-
 
 
 #Working with numbers 
@@ -26,3 +16,11 @@ my_num = 2
 print(my_num + 4)
 
 print(pow(2,3))  #2 to the power of 3
+print(max(4,7))  #Maximum of two numbers
+print(min(4,7))  #Minimum of two numbers
+print(round(3.6))  #Rounding off
+
+from math import *
+print(floor(3.7))  #Rounding down
+print(ceil(3.3))   #Rounding up
+print(sqrt(36))    #Square root
