@@ -38,3 +38,15 @@ print(friends)
 
 friends.clear()  #clears the list
 print(friends)
+
+mylist = ["banana", "cherry", "apple"]
+print(mylist)
+for i in mylist:
+    print(i)
+
+l=[4,3,1,5,2]
+print(l)
+l.sort()
+m=sorted(l)
+print(l)
+print(m)
