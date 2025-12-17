@@ -9,6 +9,6 @@ number_grid = [
 print(number_grid[0][0])  #accessing element at row 0, column 0
 
 for row in number_grid:
-    print(row)
+   # print(row)
     for col in row:
         print(col)
