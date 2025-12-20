@@ -65,5 +65,5 @@ a = frozenset([1,2,3,4,5])  #immutable set
 #a.remove(3)  #this will give error as frozenset is immutable
 #but union and intersection methods work
 b = a.union({6,7,8})
-print(b)
 print(a)
+print(b)

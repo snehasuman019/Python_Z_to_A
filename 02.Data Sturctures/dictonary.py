@@ -52,7 +52,8 @@ print(my_dict)
 #squares = {k:v*v for k,v in my_dict.items()}  #dictionary comprehension
 
 
-mytuple = [8,7]
-mydict2 = {mytuple: 15} 
- #tuples can be used as keys as they are immutable
-print(mydict2)
+# mytuple = [8,7]
+# mydict2 = {mytuple: 15} 
+#  #tuples can be used as keys as they are immutable
+# print(mydict2)
+## unhashable type: 'list'
