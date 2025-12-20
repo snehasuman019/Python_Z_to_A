@@ -1,5 +1,7 @@
 import logging
 import logging.config
+import traceback
+from logging.handlers import RotatingFileHandler
 # logging.config.fileConfig("logging.conf")
 logging.basicConfig(
     level=logging.DEBUG,
@@ -32,3 +34,28 @@ logger.addHandler(file_h)
 
 logger.warning("this is a warning")
 logger.error("This is an error")
+
+logger.debug("this is a debug message")
+
+# try:
+#     a = [1,2,3]
+#     val = a[4]
+# except:
+#     logging.error("The error is %s", traceback.format_exc())
+
+logger.setLevel(logging.INFO)
+
+#roll over after 2KB, and keep backup logs app.log.1, app.log.2, etc.
+handler = RotatingFileHandler("app.log", maxBytes=2000, backupCount = 5)
+logger.addHandler(handler)
+
+for _ in range(10000):
+    logger.info("Hello")
+
+import time
+from logging.handlers import TimedRotatingFileHandler
+handler = TimedRotatingFileHandler("timed_test.log", when='s',interval=5, backupCount = 5)
+logger.addHandler(handler)
+for _ in range(6):
+    logger.info("Hello")
+    time.sleep(5)
