@@ -88,6 +88,7 @@ result = add5(10)
 print(result)
 
 '''
+'''
 
 def repeat(num_times):
     def decorator_repeat(func):
@@ -103,3 +104,24 @@ def repeat(num_times):
 def greet(name):
     print(f"Hello {name}")
 greet("sneha")
+'''
+#countcalls
+
+class CountCalls:
+    def __init__(self, func):
+        self.func = func
+        self.num_calls = 0
+    def __call__(self, *args, **kwargs):
+        self.num_calls += 1
+        print(f'This is excuted {self.num_calls} times')
+        return self.func(*args, **kwargs)
+        # print("Hiii")
+
+# cc = CountCalls(None)
+# cc()
+
+@CountCalls
+def say_hello():
+    print("Hello")
+
+say_hello()
