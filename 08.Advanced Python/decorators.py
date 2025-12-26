@@ -124,4 +124,6 @@ class CountCalls:
 def say_hello():
     print("Hello")
 
-say_hello()
+say_hello() #1time
+say_hello() #2time
+
