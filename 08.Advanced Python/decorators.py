@@ -127,3 +127,18 @@ def say_hello():
 say_hello() #1time
 say_hello() #2time
 
+def countdown(num):
+    print("Starting")
+    while num > 0:
+        yield num 
+        num -= 1
+cd = countdown(4)
+value = next(cd)
+print(value)
+print(next(cd))
+print(next(cd))
+print(next(cd))
+
+
+# value = next(g)
+# print(value)
