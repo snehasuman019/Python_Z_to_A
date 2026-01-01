@@ -75,3 +75,27 @@ def square_numbers(n):
 
 for sq in square_numbers(5):
     print(sq)
+
+# use less memory 
+import sys
+list_comp = [i for i in range(1000000)]
+gen_exp = (i for i in range(1000000))
+print(sys.getsizeof(list_comp))
+print(sys.getsizeof(gen_exp))
+
+#Real-Life Example: Reading Large File
+def read_file(filename):
+    with open(filename) as f:
+        for line in f:
+            yield line
+
+def first():
+    yield 1
+    yield 2
+
+def second():
+    yield from first()
+    yield 3
+
+for i in second():
+    print(i)
