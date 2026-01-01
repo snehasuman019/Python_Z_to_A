@@ -62,3 +62,16 @@ def fibonacci(limit):
 fib = fibonacci(10)
 for i in fib:
     print(i)
+
+
+def count_up(n):
+    for i in range(n):
+        yield i
+
+
+def square_numbers(n):
+    for i in range(n):
+        yield i * i
+
+for sq in square_numbers(5):
+    print(sq)
