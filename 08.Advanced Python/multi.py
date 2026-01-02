@@ -27,3 +27,21 @@ t.start()
 
 
 # multiprocessing 
+import multiprocessing
+import time
+
+def task():
+    print("Task started")
+    time.sleep(2)
+    print("Task finished")
+
+p1 = multiprocessing.Process(target=task)
+p2 = multiprocessing.Process(target=task)
+
+p1.start()
+p2.start()
+
+p1.join()
+p2.join()
+
+print("Done")
