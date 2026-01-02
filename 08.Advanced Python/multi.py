@@ -17,3 +17,13 @@ t1.join()
 t2.join()
 
 print("Done")
+
+# multithreading with arguments
+def greet(name):
+    print(f"Hello {name}")
+
+t = threading.Thread(target=greet, args=("Sneha",))
+t.start()
+
+
+# multiprocessing 
