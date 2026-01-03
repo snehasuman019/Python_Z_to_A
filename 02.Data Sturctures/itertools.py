@@ -55,3 +55,9 @@ for i in count(10):
     print(i)
     if i==15:
         break
+
+
+from itertools import cycle
+
+for i, v in zip(range(6), cycle(["A", "B"])):
+    print(v)
