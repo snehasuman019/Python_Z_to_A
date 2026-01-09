@@ -1,4 +1,4 @@
-
+'''
 def printSuccess():
     print("The task was successful")
     print("Moving to the next task")
@@ -12,8 +12,8 @@ print(result)
 
 # Doc Strings
 def printSuccess2():
-    '''This func is doing nothing except printing a message
-    that message is hellow'''
+    ''''''This func is doing nothing except printing a message
+    that message is hellow 
     print("Hellow")
 printSuccess2()
 print(printSuccess2.__doc__)
@@ -34,3 +34,14 @@ def printMsg(msg):
 help(printMsg)
 # printMsg("Hello World")
 print("This is the message")
+'''
+
+def mypow(a, b):
+    '''this function computes power just like builtin pow function'''
+    c = a**b
+    print(c)
+    mypow(2, 3)
+def myadd(x, y):
+    '''this function computes addition just like builtin add function'''
+    z = x + y
+    print(z)

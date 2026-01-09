@@ -296,7 +296,7 @@ print("Confusion Matrix:",confusion_matrix(y_test,y_pred))
 /'''
 
 
-
+'''
 #SVM
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -326,3 +326,4 @@ print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 
 # roc_auc = roc_auc_score(y_test, y_pred[:, 1])
 # print("ROC_AUC:", roc_auc)
+'''
