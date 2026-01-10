@@ -35,13 +35,33 @@ help(printMsg)
 # printMsg("Hello World")
 print("This is the message")
 '''
-
+'''
 def mypow(a, b):
-    '''this function computes power just like builtin pow function'''
+    # 'this function computes power just like builtin pow function
     c = a**b
     print(c)
     mypow(2, 3)
 def myadd(x, y):
-    '''this function computes addition just like builtin add function'''
+    # this function computes addition just like builtin add function
     z = x + y
     print(z)
+# '''
+
+# def calc(a, b):
+#     return a + b, a - b
+
+# x, y = calc(5, 2)
+# def myadd(x, y):
+#     z = x + y
+#     print(z)
+
+def calc(a, b):
+    return a + b, a - b
+
+x, y = calc(5, 2)
+
+def myadd(x, y):
+    z = x + y
+    print(z)
+
+myadd(x, y)
