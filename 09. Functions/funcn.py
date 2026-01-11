@@ -65,3 +65,8 @@ def myadd(x, y):
     print(z)
 
 myadd(x, y)
+def square(n):
+    return n * n
+
+result = square(4)
+print("The square is:", result)
