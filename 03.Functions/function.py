@@ -88,3 +88,23 @@ def square(n):
 
 result = square(4)
 print("The square is:", result)
+
+# basic_functions.py
+
+def greet():
+    print("Hello, welcome to Python!")
+
+def add(a, b):
+    return a + b
+
+def calc(a, b):
+    return a + b, a - b
+
+greet()
+
+result = add(3, 5)
+print("Sum:", result)
+
+x, y = calc(10, 4)
+print("Addition:", x)
+print("Subtraction:", y)
