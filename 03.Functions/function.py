@@ -117,3 +117,20 @@ def func(n):
     func(n-1)
     func(n-1)
     print(n)
+
+
+# 
+# practice.py
+
+def reverse_number(n):
+    rev = 0
+    while n > 0:
+        rev = rev * 10 + n % 10
+        n //= 10
+    return rev
+
+def is_palindrome(s):
+    return s == s[::-1]
+
+print("Reverse:", reverse_number(1234))
+print("Is Palindrome:", is_palindrome("madam"))
