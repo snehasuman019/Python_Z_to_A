@@ -14,3 +14,4 @@ else:
     print("No error")
 finally:
     print("Always runs")
+print("After try-except block")
