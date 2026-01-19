@@ -15,3 +15,19 @@ else:
 finally:
     print("Always runs")
 print("H")
+
+# practice.py
+
+class Vehicle:
+    def __init__(self, brand):
+        self.brand = brand
+
+    def move(self):
+        print("Vehicle moves")
+
+class Car(Vehicle):
+    def move(self):
+        print(self.brand, "car drives")
+
+c = Car("Honda")
+c.move()
